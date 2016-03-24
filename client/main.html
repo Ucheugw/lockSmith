@@ -1,39 +1,63 @@
-<head>
-      <title>The LockSmithStore</title>
+<!-- This is my header page
+    I want this on every page...lets make it work
+-->
 
-</head>
+<template name = "main">
+    <head>
+        <title>The LockSmithStore</title>
 
+    </head>
 
-<body>
-      <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui inverted vertical center aligned segment">
 
             <div class="ui grid">
-                  <div class="four wide column"></div>
-                  <div class="four wide column">
-                        <img class="ui small left floated image" src="/csworker.png">
+                <div class="two wide column"></div>
+                <div class="four wide column">
+                    <img class="ui mini left floated image" src="/csworker.png">
 
-                  </div>
+                </div>
 
-                  <div class="eight wide column">
-                        <h1 class="ui left aligned red header">The LockBoard Group</h1>
-                  </div>
+                <div class="six wide column">
+                    <h1 class="ui left aligned red header">The LockBoard Group</h1>
+                </div>
 
 
             </div>
 
-            <div class="ui container">
 
-                  <div class="ui large secondary inverted pointing menu">
-                        <div class="right item">
-                              <a class="active item">Home</a>
-                              <a class="item">Tutorial</a>
-                              <a class="item">About Us</a>
-                              <a class="item">Contact Us</a>
-                              <a class="ui inverted blue button">Order Now!</a>
+
+                <div class="ui large secondary inverted pointing stackable menu">
+                    <div class="ui five column  stackable grid container">
+
+
+                        <div class = "column">
+                        <a class="active item" href ="{{pathFor route='home'}}">Home</a>
                         </div>
 
-                  </div>
-            </div>
-      </div>
+                        <div class = "column">
+                        <a class="ui item" href ="{{pathFor route='OurProduct'}}">Our Product</a>
+                        </div>
 
-</body>
+
+                        <div class = "column">
+                        <a class="item" href ="{{pathFor route='AboutUs'}}">About Us</a>
+                        </div>
+
+
+                        <div class = "column">
+                        <a class="item" href ="{{pathFor route='ContactUs'}}">Contact Us</a>
+                        </div>
+
+                        <div class = "column">
+                        <a class="ui inverted blue button">Order Now!</a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    {{> yield}}
+        <hr />
+        <p>Copyright &copy; Todos, 2014-2015.</p>
+</template>
