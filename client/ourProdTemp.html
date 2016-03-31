@@ -2,7 +2,7 @@
     I want this on every page...lets make it work
 -->
 
-<template name = "main">
+<template name = "ProductLayout">
     <head>
         <title>The LockSmithStore</title>
 
@@ -23,7 +23,7 @@
 
                 </div>
 
-                    <div class="ui large secondary inverted pointing stackable menu" name = "Top">
+                    <div class="ui large secondary inverted pointing stackable menu">
                         <div class="ui five column stackable grid container">
 
 
@@ -32,7 +32,7 @@
                             </div>
 
                             <div class = "column">
-                            <a class="ui item" href ="{{pathFor route='OurProduct'}}">Our Product</a>
+                            <a class="ui active item" href ="{{pathFor route='OurProduct'}}">Our Product</a>
                             </div>
 
 
@@ -53,8 +53,7 @@
                 </div>
             </div>
 
-
-        {{> yield}}
+            {{ > OurProduct}}
             <hr />
             <p>Copyright &copy; The LockBoard Group, 2015-2016.</p>
 

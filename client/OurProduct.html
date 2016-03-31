@@ -1,3 +1,73 @@
-<template name = "OurProduct">
-    <h1>About LockBoard</h1>
+<template name="OurProduct">
+    <div class="ui center aligned raised grey segment">
+        <h1> About the Board</h1>
+    </div>
+    <div class = "ui grid container">
+        <div class = "ui stackable grid">
+            <div class = "two column row">
+                <div class = "column">
+
+
+                    <div class="ui small vertical compact pointing side menu">
+                        <a class = "fitted item " href ="{{pathFor route='Consolidation'}}">
+                            <div class = " horizontally fitted item" >Consolidate</div>
+                        </a>
+
+                        <a class = "fitted item" href ="{{pathFor route='Economical'}}">
+                            <div class = " horizontally fitted item" >Economical</div>
+                        </a>
+
+                        <a class = "fitted item" href ="{{pathFor route='Visible'}}">
+                            <div class = " horizontally fitted item" >Visible Keys</div>
+                        </a>
+
+                        <a class = "fitted item" href ="{{pathFor route='Space'}}">
+                            <div class = " horizontally fitted item" >Space Saver</div>
+                        </a>
+
+                        <a class = "fitted item" href ="{{pathFor route='Organization'}}">
+                            <div class = " horizontally fitted item" >Organization</div>
+                        </a>
+
+                        <a class = "fitted item" href ="{{pathFor route='Unlimited'}}">
+                            <div class = " horizontally fitted item" >Unlimited Locks!  </div>
+                        </a>
+                    </div>
+                </div>
+                <div class = "ui vertical aligned divider"></div>
+                <div class = "column">W00twhooo
+                    <scontent>
+                        {{> yield "scontent"}}
+                    </scontent>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</template>
+
+<template name = "Consolidation">
+    <h1> Consolidate</h1>
+</template>
+
+<template name = "Economical">
+    <h1> Economical</h1>
+</template>
+
+<template name = "Visible">
+    <h1> Highly Visible</h1>
+</template>
+
+<template name = "Space">
+    <h1> Space Saver</h1>
+</template>
+
+<template name = "Organization">
+    <h1> Organization</h1>
+</template>
+
+<template name = "Unlimited">
+    <h1> Unlimited Locks</h1>
 </template>

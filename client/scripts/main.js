@@ -1,6 +1,7 @@
 Router.configure({
     //options go here
-    layoutTemplate: 'main'
+    layoutTemplate: 'main',
+    ourProductTemplate: 'ourProdTem'
 
 });
 
@@ -21,14 +22,26 @@ Template.hello.events({
 });*/
 
 if (Meteor.isClient) {
-  // This code only runs on the client
-  Template.main.events({
-      'click a': function(template){
-          console.log((event.target).closest("a").name);
-          var currentChoice = $(event.target).closest("a");
+    // This code only runs on the client
+    Template.main.events({
+        'click a': function(template) {
+            console.log("Main temp");
+            //console.log((event.target).closest("a"));
+            var currentChoice = $(event.target).closest("a");
+            //console.log(currentChoice);
+            currentChoice.addClass("active");
+            $(".stackable.menu a").not(currentChoice).removeClass("active");
+        }
+    });
 
-          currentChoice.addClass("active");
-          $(".menu a").not(currentChoice).removeClass("active");
-      }
-                   });
+    Template.ProductLayout.events({
+        'click a': function(template) {
+            console.log("ProductLayout temp");
+            //console.log((event.target).closest("a"));
+            var currentChoice = $(event.target).closest("a");
+            //console.log(currentChoice);
+            currentChoice.addClass("active");
+            $(".side.menu a").not(currentChoice).removeClass("active");
+        }
+    });
 }
