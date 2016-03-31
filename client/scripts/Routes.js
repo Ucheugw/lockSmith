@@ -69,6 +69,7 @@ Router.route('/ContactUs', function () {
 Router.route('/OurProduct', function () {
     this.layout('ProductLayout');
     this.render('OurProduct');
+    this.render('summary', {to: 'scontent'});
 }, {
   // provide a custom name
   name: 'OurProduct'

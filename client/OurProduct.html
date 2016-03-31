@@ -4,8 +4,8 @@
     </div>
     <div class = "ui grid container">
         <div class = "ui stackable grid">
-            <div class = "two column row">
-                <div class = "column">
+            <div class = "row">
+                <div class = "ui two wide column">
 
 
                     <div class="ui small vertical compact pointing side menu">
@@ -30,12 +30,12 @@
                         </a>
 
                         <a class = "fitted item" href ="{{pathFor route='Unlimited'}}">
-                            <div class = " horizontally fitted item" >Unlimited Locks!  </div>
+                            <div class = " horizontally fitted item" >Unlimited Locks!</div>
                         </a>
                     </div>
                 </div>
-                <div class = "ui vertical aligned divider"></div>
-                <div class = "column">W00twhooo
+
+                <div class = " left floated column">
                     <scontent>
                         {{> yield "scontent"}}
                     </scontent>
@@ -48,26 +48,129 @@
 
 </template>
 
+
+<template name = "summary">
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> LockBoard</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated image" src = "/pictures/ourproduct/summaryPic.jpg">
+                    <p> <b>LockBoards provide:</b> The most efficient and practical lock out
+                    system available. </p>
+                    <p>Be the first company in your industry to utilize the innovative LockBoard.
+                    No more awkward and disorganized lock boxes. The LockBoard provides <b> ADVANTAGES</b>
+                that a lock box cannot. </p>
+                <p> Click on the menu tabs to the left to find out more!</p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
+
+</template>
+
+
 <template name = "Consolidation">
-    <h1> Consolidate</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Consolidate</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated rounded image" src = "/pictures/ourproduct/consolidatePic.jpg">
+                    <p>Paperwork and locks are located in one efficient package!
+                    Paperwork and locks are located in one efficient package!
+                Paperwork and locks are located in one efficient package! </p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
+
 </template>
 
 <template name = "Economical">
-    <h1> Economical</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Economical</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated rounded image" src = "/pictures/ourproduct/economicalPic.jpg">
+                    <p> Save time and money due to enhanced organization!
+                    Save time and money due to enhanced organization!
+                Save time and money due to enhanced organization! </p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
 </template>
 
 <template name = "Visible">
-    <h1> Highly Visible</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Highly Visible</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated rounded image" src = "/pictures/ourproduct/visiblePic.jpg">
+                    <p>Everyone involved is assured of positive isolation due to keys being visible.
+                    Everyone involved is assured of positive isolation due to keys being visible.
+                Everyone involved is assured of positive isolation due to keys being visible. </p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
 </template>
 
 <template name = "Space">
-    <h1> Space Saver</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Space Saver</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated rounded image" src = "/pictures/ourproduct/spacesaverPic.jpg">
+                    <p>Use less space to obtain the same objective!
+                    Use less space to obtain the same objective!
+                Use less space to obtain the same objective! </p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
 </template>
 
 <template name = "Organization">
-    <h1> Organization</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Organization</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated rounded image" src = "/pictures/ourproduct/organizationPic.jpg">
+                    <p>Peg boards provide unlimited organizational options.
+                    Peg boards provide unlimited organizational options.
+                Peg boards provide unlimited organizational options. </p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
 </template>
 
 <template name = "Unlimited">
-    <h1> Unlimited Locks</h1>
+    <div class = "ui center aligned raised padded blue text container segment">
+        <h1> Unlimited Locks</h1>
+        <div class = "ui stackable grid">
+            <!--div class = "one column row"-->
+                <div class = "ui padded raised yellow segment">
+                    <img class = "ui medium left floated  rounded image" src = "/pictures/ourproduct/unlimitedPic.png">
+                    <p>When a solid anchor is used, the number of locks that can be applied
+                    is limitless. When a solid anchor is used, the number of locks that can be applied
+                    is limitless. When a solid anchor is used, the number of locks that can be applied
+                    is limitless.</p>
+                </div>
+            <!--/div-->
+
+        </div>
+    </div>
 </template>
